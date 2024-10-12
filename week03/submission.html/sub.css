@@ -1,0 +1,50 @@
+
+/* Color Scheme */
+:root {
+  --primary-color: #85bdea;   /* Maya Blue */
+  --secondary-color: #a3f5eb; /* Ice Blue */
+  --accent1-color: #a56550;   /* Brown sugar */
+  --accent2-color: #6a3e37;   /* Bole */
+}
+
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;; /* Body text font */
+  font-weight: 400;
+  background-color: var(--primary-color); /* Primary color as background */
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  font-weight: 100; /* Heading font */
+  color: var(--secondary-color); /* Secondary color for headings */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--accent1-color); /* Accent color 1 for header background */
+}
+
+header img {
+  max-width: 150px;
+  border-radius: 50%; /* Rounded logo */
+}
+
+footer {
+  margin-top: 20px;
+  background-color: var(--accent2-color); /* Accent color 2 for footer */
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--secondary-color); /* Hover effect on links */
+}
