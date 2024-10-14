@@ -1,0 +1,106 @@
+
+/* Colors chosen */
+:root {
+    --primary-color: #85bdea;   /* Maya Blue */
+    --secondary-color: #a3f5eb; /* Ice Blue */
+    --accent1-color: #a56550;   /* Brown sugar*/
+    --accent2-color: #6a3e37;   /* Bole */
+  }
+  
+  /* General Styles */
+  body {
+    font-family: "Roboto", sans-serif;; /* Body text font */
+    font-weight: 400;
+    background-color: var(--primary-color); /* Primary color as background */
+    color: white;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--accent2-color); /* Accent color 1 for header background */
+  }
+
+  nav {
+    display: flex;
+    gap: 30px; /* Adds space between navigation links */
+  }
+
+    
+  header img {
+    max-width: 150px;
+    border-radius: 50%; /* Rounded logo */
+  }
+
+  .hero {
+  display: flex;
+  justify-content: space-between; /* Align text and image on opposite sides */
+  align-items: flex-start; /* Center items vertically */
+  padding: 20px;
+  background-color: #a56550;
+}
+
+
+.hero h1 {
+  position: absolute;
+  top: 40%;              /* Adjust this value for vertical placement */
+  left: 50%;             /* Center it horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  color: white;          /* White text for visibility */
+  font-size: 3rem;      /* Large font size for heading */
+  z-index: index 2;           /* Stack it on top of other elements */
+}
+
+/* Styling the paragraph */
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 600px; /* Restrict the width for readability */
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;             /* Add some padding around the section */
+  background-color: #a56550;   /* Brown sugar*/
+  margin: 20px 0;           /* Space above and below the section */
+  border-radius: 8px;       /* Rounded corners */
+}
+
+section h2 {
+  font-size: 2rem;          /* Increase font size for the section title */
+  color: white
+  margin-bottom: 10px;      /* Space between title and paragraph */
+}
+
+section p {
+  font-size: 1rem;          /* Standard font size for the paragraph */
+  line-height: 1.5;         /* Space between lines for readability */
+  color: white
+}
+
+  footer {
+    margin-top: 20px;
+    background-color: var(--accent2-color); /* Accent color 2 for footer */
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+.sociallinks img {
+    vertical-align: right; /* Aligns icons nicely with text */
+}
+  
+  
+  
+  
+ 
+
