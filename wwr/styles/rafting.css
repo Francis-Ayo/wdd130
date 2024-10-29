@@ -18,17 +18,22 @@
   
   header {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav */
     align-items: center;
+    justify-content: space-between; /* Space between logo and nav */
     padding: 10px 20px;
     background-color: var(--accent2-color); /* Accent color 1 for header background */
   }
 
-  nav {
-    display: flex;
-    gap: 30px; /* Adds space between navigation links */
+  .Logo {
+    width: 120px;
   }
 
+  .navbar a {
+    margin-left: 20px; /* Adds space between links */
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
     
   header img {
     max-width: 150px;

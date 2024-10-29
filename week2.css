@@ -1,10 +1,10 @@
 /* Main Selector */
 main {
     max-width: 840px;
-}
-
-/* Aside Selector */
-aside {
+  }
+  
+  /* Aside Selector */
+  aside {
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -12,56 +12,28 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
-}
+  }
   
   /* Image inside the Aside */
   aside img {
     width: 200px;
     height: auto;
-}
+  }
   
   /* Profile Image in Main Section */
   main img {
     width: 150px;
     height: auto;
-}
+  }
   
   /* Paragraph Selector */
   p {
     padding: 0;
-}
+  }
   
   /* Footer Selector */
   footer {
     margin-top: 2rem; /* Adds top margin for separation */
     border-top: 1px solid #000; /* Adds top border for distinction */
-    text-align: center; /* Centers text within footer */
-}
-
-nav {
-    background-color: steelblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
-
-h1 {
-    color: steelblue;
-}
-
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-p {
-    padding: 10px;
-}
-
+    text-align: center; /* Centers text within footer */
+  }
