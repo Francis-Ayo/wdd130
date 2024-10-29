@@ -1,111 +1,187 @@
-
-/* Colors chosen */
+/* Colors */
 :root {
-    --primary-color: #85bdea;   /* Maya Blue */
-    --secondary-color: #a3f5eb; /* Ice Blue */
-    --accent1-color: #a56550;   /* Brown sugar*/
-    --accent2-color: #6a3e37;   /* Bole */
-  }
-  
-  /* General Styles */
-  body {
-    font-family: "Roboto", sans-serif;; /* Body text font */
-    font-weight: 400;
-    background-color: var(--primary-color); /* Primary color as background */
-    color: white;
-    padding: 20px;
-  }
-  
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space between logo and nav */
-    padding: 10px 20px;
-    background-color: var(--accent2-color); /* Accent color 1 for header background */
-  }
+  --primary-color: #85bdea;   /* Maya Blue */
+  --secondary-color: #a3f5eb; /* Ice Blue */
+  --accent1-color: #a56550;   /* Brown sugar */
+  --accent2-color: #6a3e37;   /* Bole */
+}
 
-  .Logo {
-    width: 120px;
-  }
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif; /* Body text font */
+  font-weight: 400;
+  background-color: var(--primary-color); /* Primary color as background */
+  color: white;
+  padding: 20px;
+} 
 
-  .navbar a {
-    margin-left: 20px; /* Adds space between links */
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--accent2-color); /* Header background */
+}
+
+header img {
+  max-width: 120px;
+  border-radius: 50%; /* Rounded logo */
+}
+
+.navbar a {
+  margin-left: 20px; /* Space between links */
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
-    
-  header img {
-    max-width: 150px;
-    border-radius: 50%; /* Rounded logo */
-  }
 
-  .hero {
+/* Hero Section */
+.hero {
   display: flex;
-  justify-content: space-between; /* Align text and image on opposite sides */
-  align-items: flex-start; /* Center items vertically */
+  flex-direction: column;  /* Stack heading and paragraph vertically */
+  align-items: center;     /* Center content horizontally */
   padding: 20px;
-  background-color: #a56550;
+  background-color: var(--accent1-color); /* Brown sugar */
+  border-radius: 8px;
+  text-align: center;
 }
 
+.hero {
+  
+  padding: 20px;
+}
 
 .hero h1 {
-  position: absolute;
-  top: 40%;              /* Adjust this value for vertical placement */
-  left: 50%;             /* Center it horizontally */
-  transform: translate(-50%, -50%); /* Perfect centering */
-  color: white;          /* White text for visibility */
-  font-size: 3rem;      /* Large font size for heading */
-  z-index: index 2;           /* Stack it on top of other elements */
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 15px;  /* Add space between heading and paragraph */
+}
+
+.hero img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 20px;
 }
 
 /* Styling the paragraph */
 .hero p {
   font-size: 1.2rem;
   line-height: 1.6;
-  margin-bottom: 20px;
-  max-width: 600px; /* Restrict the width for readability */
-}
-
-a {
+  max-width: 600px;
   color: white;
-  text-decoration: underline;
+  text-align: center;
 }
 
+/* Article Section */
+article {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--accent1-color);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* History Section */
 section {
-  padding: 20px;             /* Add some padding around the section */
-  background-color: #a56550;   /* Brown sugar*/
-  margin: 20px 0;           /* Space above and below the section */
-  border-radius: 8px;       /* Rounded corners */
+  padding: 20px;
+  background-color: var(--accent1-color);
+  margin: 20px 0;
+  border-radius: 8px;
 }
 
 section h2 {
-  font-size: 2rem;          /* Increase font size for the section title */
-  color: white
-  margin-bottom: 10px;      /* Space between title and paragraph */
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
 }
 
 section p {
-  font-size: 1rem;          /* Standard font size for the paragraph */
-  line-height: 1.5;         /* Space between lines for readability */
-  color: white
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
 }
 
-  footer {
-    margin-top: 20px;
-    background-color: var(--accent2-color); /* Accent color 2 for footer */
-    text-align: center;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-  }
+/* Footer */
+footer {
+  margin-top: 20px;
+  background-color: var(--accent2-color);
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+footer p {
+  margin: 5px 0;
+}
 
 .sociallinks img {
-    vertical-align: right; /* Aligns icons nicely with text */
+  margin-left: 10px;
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
 }
-  
-  
-  
-  
- 
 
+/* Responsive adjustment for hero heading */
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 2rem;
+      padding: 15px;
+  }
+
+  .hero {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .hero img {
+      margin: 10px 0;
+      width: 80%;
+  }
+
+  article {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+figure {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.sociallinks {
+  display: flex;
+  gap: 10px;
+}
+
+.sociallinks a img {
+  width: 25px;
+  height: auto;
+}
