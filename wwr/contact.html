@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - White Water Rafting</title>
+    <meta name="description" content="This page contains all the contact details for inquiries">
+    <meta name="author" content="Francis Fadipe">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+<header>
+  <img src="/images/brownrafting.jpeg" alt="website Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="trips.html">Trips</a>
+        <a class="current" href="contact.html">Contact Us</a>
+    </nav>
+</header>
+<main>
+    <h1>Contact Us</h1>
+    <section>
+        <h2>Our Contact Information</h2>
+        <p>Address: 15 Merton Road London. SE25 5ND</p>
+        <p>Phone: +44793930379</p>
+        <p>Email: <a href="fadipefrancis@gmail.com">fadipefrancis@gmail.com</a></p>
+    </section>
+    <section>
+        <h2>Send Us a Message</h2>
+        <form id="form">
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Your Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <p>What is the purpose of your message?</p>
+            <input type="radio" id="general" name="inquiries" value="general">
+            <label for="general">General Inquiry</label><br>
+            <input type="radio" id="reservation" name="inquiries" value="reservation">
+            <label for="reservation">Reservation Question</label><br>
+            <input type="radio" id="website" name="inquiries" value="website">
+            <label for="website">Website Suggestions</label><br>
+
+            <label for="message">Message:</label><br>
+            <textarea rows="6" name="message" id="message" required></textarea><br>
+
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
+
+            <button type="submit">Submit Your Inquiry</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Meet Our Team</h2>
+        <div class="employee">
+            <img src="images/happy-worker.jpg" alt="Happy worker"width="250" height="200">
+            <p>John Doe - Customer Service</p>
+        </div>
+        <div class="employee">
+            <img src="images/happy-worker2.jpg" alt="Jane Smith"width="250" height="300">
+            <p>Jane Smith - Booking Specialist</p>
+        </div>
+        <div class="employee">
+            <img src="https://img.freepik.com/free-photo/happy-african-american-professional-manager-smiling-looking-camera-headshot-portrait_1163-5134.jpg" 
+            alt="Happy looking employee"width="250" height="auto">
+            <p> Chuks Andarson - Adventure Guide</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.521390455439!2d-0.07728482338673846!3d51.3934738717876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487601215b80e73f%3A0x613c48dccdd00b0e!2sMerton%20Rd%2C%20London!5e0!3m2!1sen!2suk!4v1730247185181!5m2!1sen!2suk" 
+        width="600" height="450" style="border:0;"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</main>
+<footer>
+    <nav>
+        <a href="https://www.facebook.com/olamilekan.emmanuel.5437">
+            <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-1024.png" width="40" height="40" alt="Facebook">
+        </a>
+        <a href="https://twitter.com">
+            <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-1024.png" width="40" height="40" alt="Twitter">
+        </a>
+        <a href="https://instagram.com">
+            <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-1024.png" width="40" height="40" alt="Instagram">
+        </a>
+    </nav>
+    <p>©2024 🌴 Rafting Site Development 🌴 Francis Fadipe</p>
+    <p><a href="wireframe-link">Contact Us Wireframe</a></p>
+</footer>
+</body>
+</html>
